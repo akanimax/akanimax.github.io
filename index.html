@@ -33,7 +33,7 @@
                     Animesh Karnewar
                   </p>
                   <p>
-                    I am a completing <b><em>Ph.D.</em></b> student at <a href="https://ucl.ac.uk">UCL</a>, London and a
+                    I am a <b><em>Ph.D.</em></b> student at <a href="https://ucl.ac.uk">UCL</a>, London and a
                     <b><em>Visiting
                         Researcher</em></b> at <a href="https://ai.meta.com/research/" target="_blank">Meta GenAI
                       research</a>, London.
@@ -62,7 +62,7 @@
                   </p>
 
                   <p>
-                    Apart from this, I am a movie lover and an exploratory-casual-gamer and a hobbyist photographer.
+                    Apart from this, I am a movie lover, an exploratory-casual-gamer, and a hobbyist photographer.
                     Feel free to check out my photography work on <a href="https://www.instagram.com/akanimax3"
                       target="_blank">Instagram: @akanimax3</a>.
                   </p>
@@ -187,10 +187,7 @@
                   <p>
                     We propose the GOEn (Gradient Origin Encoding) that encodes source views (observations) into
                     arbitrary 3D Radiance-Field
-                    representations while trying to maximize the transfer of source information. GOEn encodings can be
-                    used in the context
-                    of 3D diffusion-with-forward models (our proposed GOEnFusion) and for regression-based 3D
-                    reconstruction.
+                    representations while trying to maximize the transfer of source information.
                   </p>
                 </td>
               </tr>
@@ -213,8 +210,8 @@
                       document.getElementById('holofusion_image').style.opacity = "0";
                     }
                     holofusion_stop()
-                  </script>  
-              </td>
+                  </script>
+                </td>
                 <td style="padding:20px;width:75%;vertical-align:middle">
                   <a href="https://holodiffusion.github.io/holofusion">
                     <span class="papertitle">HoloFusion: Towards Photo-realistic 3D Generative Modeling
@@ -236,15 +233,252 @@
                   <p></p>
                   <p>
                     We propose HoloFusion to generate photo-realistic 3D radiance fields by extending the HoloDiffusion
-                    method with a jointly trained 2D 'super resolution' network. The independently super-resolved images
-                    are fused back into the 3D representation to improve the fidelity of the 3D model via distillation,
-                    while preserving the consistency across view changes.
+                    method with a jointly trained 2D 'super resolution' network.
                   </p>
                 </td>
               </tr>
 
+              <tr onmouseout="holodiffusion_stop()" onmouseover="holodiffusion_start()">
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <div class="one">
+                    <div class="two" id='holodiffusion_image'><video width=100% muted autoplay loop>
+                        <source src="images/holodiffusion_after.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video></div>
+                    <img src='images/holodiffusion_before.png' width=100%>
+                  </div>
+                  <script type="text/javascript">
+                    function holodiffusion_start() {
+                      document.getElementById('holodiffusion_image').style.opacity = "1";
+                    }
 
+                    function holodiffusion_stop() {
+                      document.getElementById('holodiffusion_image').style.opacity = "0";
+                    }
+                    holodiffusion_stop()
+                  </script>
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                  <a href="https://holodiffusion.github.io">
+                    <span class="papertitle">HoloDiffusion: Training a 3D Diffusion Model using 2D Images
+                    </span>
+                  </a>
+                  <br>
+                  <strong>Animesh Karnewar</strong>,
+                  <a href="https://www.robots.ox.ac.uk/~vedaldi">Andrea Vedaldi</a>,
+                  <a href="https://d-novotny.github.io">David Novotny</a>,
+                  <a href="http://www0.cs.ucl.ac.uk/staff/n.mitra">Niloy J. Mitra</a>
+                  <br>
+                  <em><b>CVPR</b></em>, 2023
+                  <br>
+                  <a href="https://holodiffusion.github.io">project page</a>
+                  /
+                  <a href="https://youtu.be/F65fEmvUKyc?si=ACa70stdfSX_HlAH">video</a>
+                  /
+                  <a href="https://arxiv.org/abs/2308.14244">arXiv</a>
+                  /
+                  <a href="https://github.com/facebookresearch/holo_diffusion">code</a>
+                  <p></p>
+                  <p>
+                    We present HoloDiffusion as the first 3D-aware generative diffusion model that produces
+                    3D-consistent images while being trained with only posed image supervision.
+                  </p>
+                </td>
+              </tr>
 
+              <tr onmouseout="_3ingan_stop()" onmouseover="_3ingan_start()">
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <div class="one">
+                    <div class="two" id='_3ingan_image'><video width=100% muted autoplay loop>
+                        <source src="images/3inGAN_after.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video></div>
+                    <img src='images/3inGAN_before.png' width=100%>
+                  </div>
+                  <script type="text/javascript">
+                    function _3ingan_start() {
+                      document.getElementById('_3ingan_image').style.opacity = "1";
+                    }
+
+                    function _3ingan_stop() {
+                      document.getElementById('_3ingan_image').style.opacity = "0";
+                    }
+                    _3ingan_stop()
+                  </script>
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                  <a href="https://geometry.cs.ucl.ac.uk/projects/2022/3inGAN">
+                    <span class="papertitle">3inGAN: Learning a 3D Generative Model from Images of a Self-similar Scene
+                    </span>
+                  </a>
+                  <br>
+                  <strong>Animesh Karnewar</strong>,
+                  <a href="https://www.oliverwang.info">Oliver Wang</a>,
+                  <a href="https://www.homepages.ucl.ac.uk/~ucactri/">Tobias Ritschel</a>,
+                  <a href="http://www0.cs.ucl.ac.uk/staff/n.mitra">Niloy J. Mitra</a>
+                  <br>
+                  <em><b>3DV</b></em>, 2022
+                  <br>
+                  <a href="https://geometry.cs.ucl.ac.uk/projects/2022/3inGAN/">project page</a>
+                  /
+                  <a
+                    href="https://geometry.cs.ucl.ac.uk/projects/2022/3inGAN/static/videos/presentation/3dv22_presentation.mp4">video</a>
+                  /
+                  <a href="https://arxiv.org/abs/2211.14902">arXiv</a>
+                  /
+                  <a href="https://github.com/akanimax/3inGAN">code</a>
+                  <p></p>
+                  <p>
+                    We introduce 3inGAN, an unconditional 3D generative model trained from 2D images of a single
+                    self-similar 3D scene.
+                  </p>
+                </td>
+              </tr>
+
+              <tr onmouseout="relufields_stop()" onmouseover="relufields_start()">
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <div class="one">
+                    <div class="two" id='relufields_image'><video width=100% muted autoplay loop>
+                        <source src="images/relufields_after.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video></div>
+                    <img src='images/relufields_before.jpg' width=100%>
+                  </div>
+                  <script type="text/javascript">
+                    function relufields_start() {
+                      document.getElementById('relufields_image').style.opacity = "1";
+                    }
+
+                    function relufields_stop() {
+                      document.getElementById('relufields_image').style.opacity = "0";
+                    }
+                    relufields_stop()
+                  </script>
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                  <a href="https://geometry.cs.ucl.ac.uk/projects/2022/relu_fields">
+                    <span class="papertitle">ReLU Fields: The Little Non-linearity That Could
+                    </span>
+                  </a>
+                  <br>
+                  <strong>Animesh Karnewar</strong>,
+                  <a href="https://www.homepages.ucl.ac.uk/~ucactri/">Tobias Ritschel</a>,
+                  <a href="https://www.oliverwang.info">Oliver Wang</a>,
+                  <a href="http://www0.cs.ucl.ac.uk/staff/n.mitra">Niloy J. Mitra</a>
+                  <br>
+                  <em><b>SIGGRAPH</b></em>, 2022
+                  <br>
+                  <a href="https://geometry.cs.ucl.ac.uk/projects/2022/relu_fields/">project page</a>
+                  /
+                  <a href="https://youtu.be/GcRgqzWh4FA?si=pyTSL729gZeqNGjy">video</a>
+                  /
+                  <a href="https://arxiv.org/abs/2205.10824">arXiv</a>
+                  /
+                  <a href="https://github.com/akanimax/thr3ed_atom">code</a>
+                  <p></p>
+                  <p>
+                    We present a method to represent complex signals such as images or 3D scenes on
+                    regularly sampled grid vertices. Our method is able to match the expressiveness of coordinate-based
+                    MLPs while retaining reconstruction and rendering speed of voxel grids, without requiring any neural
+                    networks
+                    or sparse data structures. As a result it converges significantly faster.
+                  </p>
+                </td>
+              </tr>
+
+              <tr onmouseout="rgbdnet_stop()" onmouseover="rgbdnet_start()">
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <div class="one">
+                    <div class="two" id="rgbdnet_image"><video width=100% muted autoplay loop>
+                        <source src="images/rgbdnet_after.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video></div>
+                    <img src="images/rgbdnet_before.jpg" width=100%>
+                  </div>
+                  <script type="text/javascript">
+                    function rgbdnet_start() {
+                      document.getElementById('rgbdnet_image').style.opacity = "1";
+                    }
+
+                    function rgbdnet_stop() {
+                      document.getElementById('rgbdnet_image').style.opacity = "0";
+                    }
+                    rgbdnet_stop()
+                  </script>
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                  <a href="https://arxiv.org/abs/2011.14398">
+                    <papertitle>RGBD-Net: Predicting Color and Depth images for Novel Views Synthesis</papertitle>
+                  </a>
+                  <br>
+                  <a href="https://www.phongnhhn.info/">Phong Nguyen</a>,
+                  <strong>Animesh Karnewar</strong>,
+                  <a href="https://lamhuynh.info/">Lam Huynh</a>,
+                  <a href="https://esa.rahtu.fi/">Esa Rahtu</a>,
+                  <a href="https://cmp.felk.cvut.cz/~matas/">Jiri Matas</a>,
+                  <a href="https://www.oulu.fi/university/researcher/janne-heikkila">Janne Heikkila</a>
+                  <br>
+                  <b><em>3DV</em></b>, 2021
+                  <br>
+                  <a
+                    href="https://recorder-v3.slideslive.com/?share=56374&s=66606cbd-dc42-4e04-9114-a095a76efbd5">video</a> /
+                  <a href="https://arxiv.org/abs/2011.14398">arXiv</a> /
+                  <a href="https://github.com/phongnhhn92/RGBDNet">code</a>
+                  <p></p>
+                  <p style="text-align:justify">
+                    We propose a new cascaded architecture for novel view synthesis, called <strong>RGBD-Net</strong>,
+                    which consists of two core components: a hierarchical depth regression network and a depth-aware
+                    generator network. The former one predicts depth maps of the target views by using adaptive depth
+                    scaling, while the latter one leverages the predicted depths and renders spatially and temporally
+                    consistent target images.
+                  </p>
+                </td>
+              </tr>
+
+              <tr onmouseout="msggan_stop()" onmouseover="msggan_start()">
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <div class="one">
+                    <div class="two" id="msggan_image"><video width=100% muted autoplay loop>
+                        <source src="images/msggan_after.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video></div>
+                    <img src="images/msggan_before.jpg" width=100%>
+                  </div>
+                  <script type="text/javascript">
+                    function msggan_start() {
+                      document.getElementById('msggan_image').style.opacity = "1";
+                    }
+
+                    function msggan_stop() {
+                      document.getElementById('msggan_image').style.opacity = "0";
+                    }
+                    msggan_stop()
+                  </script>
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                  <a href="https://arxiv.org/abs/1903.06048">
+                    <papertitle>MSG-GAN: Multi-Scale Gradients for Generative Adversarial Networks</papertitle>
+                  </a>
+                  <br>
+                  <strong>Animesh Karnewar</strong>,
+                  <a href="https://oliverwang.info"> Oliver Wang </a>
+                  <br>
+                  <b><em>CVPR</em></b>, 2020
+                  <br>
+                  <a
+                    href="https://youtu.be/f0t7wLpnqzo?si=NPRZsTxALwX46m9v">video</a> /
+                  <a href="https://arxiv.org/abs/1903.06048">arXiv</a> /
+                  <a href="https://github.com/akanimax/msg-stylegan-tf">code</a>
+                  <p></p>
+                  <p style="text-align:justify">
+                    We propose the MSG-GAN (Multi-Scale Gradient Generative Adversarial Network), a simple but 
+                    effective technique for addressing the instability problem of GANs by allowing the flow 
+                    of gradients from the discriminator to the generator at multiple scales. This technique 
+                    provides a stable approach for high resolution image synthesis, and serves as an alternative 
+                    to the commonly used progressive growing technique.
+                  </p>
+                </td>
+              </tr>
 
             </tbody>
           </table>
@@ -260,11 +494,11 @@
                 <td style="padding:20px;width:100%;vertical-align:middle">
                   <h2>Academic service</h2>
                   <p>
-                    Reviewer at ICCV/ECCV since 2021
+                    Reviewer at ICCV/ECCV 2021, 2022, 2023, 2024
                     <br>
-                    Reviewer at CVPR since 2022
+                    Reviewer at CVPR since 2021, 2022, 2023, 2024
                     <br>
-                    Reviewer at SIGGRAPH since 2023
+                    Reviewer at SIGGRAPH 2024
                   </p>
                 </td>
               </tr>
@@ -312,7 +546,7 @@
                 <td style="padding:0px">
                   <br>
                   <p style="text-align:right;font-size:small;">
-                    "The simplest solution is almost always the best." - William of Ockham
+                    This webpage is created using <a href="https://jonbarron.info">Jon Barron's </a> template.
                   </p>
                 </td>
               </tr>
