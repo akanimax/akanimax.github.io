@@ -145,48 +145,51 @@
             style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
 
-              <tr onmouseout="goenfusion_stop()" onmouseover="goenfusion_start()">
+              <tr onmouseout="goembed_stop()" onmouseover="goembed_start()">
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <div class="one">
-                    <div class="two" id='goenfusion_image'><video width=100% muted autoplay loop>
-                        <source src="images/goenfusion_after.mp4" type="video/mp4">
+                    <div class="two" id='goembed_image'><video width=100% muted autoplay loop>
+                        <source src="images/goembed_after.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                       </video></div>
-                    <img src='images/goenfusion_before.png' width=100%>
+                    <img src='images/goembed_before.png' width=100%>
                   </div>
                   <script type="text/javascript">
-                    function goenfusion_start() {
-                      document.getElementById('goenfusion_image').style.opacity = "1";
+                    function goembed_start() {
+                      document.getElementById('goembed_image').style.opacity = "1";
                     }
 
-                    function goenfusion_stop() {
-                      document.getElementById('goenfusion_image').style.opacity = "0";
+                    function goembed_stop() {
+                      document.getElementById('goembed_image').style.opacity = "0";
                     }
-                    goenfusion_stop()
+                    goembed_stop()
                   </script>
                 </td>
                 <td style="padding:20px;width:75%;vertical-align:middle">
-                  <a href="https://holodiffusion.github.io/goenfusion">
-                    <span class="papertitle">GOEnFusion: Gradient Origin Encodings for 3D Forward Diffusion Models
+                  <a href="https://holodiffusion.github.io/goembed">
+                    <span class="papertitle">GOEmbed: Gradient Origin Embeddings for representation agnostic 3D Feature
+                      Learning
                     </span>
                   </a>
                   <br>
                   <strong>Animesh Karnewar</strong>,
+                  <a href="https://shapovalov.ro/">Roman Shapovalov</a>,
+                  <a href="https://www.tmonnier.com/">Tom Monnier</a>,
                   <a href="https://www.robots.ox.ac.uk/~vedaldi">Andrea Vedaldi</a>,
                   <a href="http://www0.cs.ucl.ac.uk/staff/n.mitra">Niloy J. Mitra</a>,
                   <a href="https://d-novotny.github.io">David Novotny</a>
                   <br>
-                  <em>arXiv</em>, 2023
+                  <em><b>ECCV</b></em>, 2024
                   <br>
-                  <a href="https://holodiffusion.github.io/goenfusion">project page</a>
+                  <a href="https://holodiffusion.github.io/goembed">project page</a>
                   /
                   <!-- <a href="">video</a> -->
                   <!-- / -->
                   <a href="https://arxiv.org/abs/2312.08744">arXiv</a>
                   <p></p>
                   <p>
-                    We propose the GOEn (Gradient Origin Encoding) that encodes source views (observations) into
-                    arbitrary 3D Radiance-Field
+                    We propose the GOEmbed (Gradient Origin Embeddings) that encodes
+                    source views (observations) into arbitrary 3D Radiance-Field
                     representations while trying to maximize the transfer of source information.
                   </p>
                 </td>
@@ -421,7 +424,8 @@
                   <b><em>3DV</em></b>, 2021
                   <br>
                   <a
-                    href="https://recorder-v3.slideslive.com/?share=56374&s=66606cbd-dc42-4e04-9114-a095a76efbd5">video</a> /
+                    href="https://recorder-v3.slideslive.com/?share=56374&s=66606cbd-dc42-4e04-9114-a095a76efbd5">video</a>
+                  /
                   <a href="https://arxiv.org/abs/2011.14398">arXiv</a> /
                   <a href="https://github.com/phongnhhn92/RGBDNet">code</a>
                   <p></p>
@@ -465,16 +469,15 @@
                   <br>
                   <b><em>CVPR</em></b>, 2020
                   <br>
-                  <a
-                    href="https://youtu.be/f0t7wLpnqzo?si=NPRZsTxALwX46m9v">video</a> /
+                  <a href="https://youtu.be/f0t7wLpnqzo?si=NPRZsTxALwX46m9v">video</a> /
                   <a href="https://arxiv.org/abs/1903.06048">arXiv</a> /
                   <a href="https://github.com/akanimax/msg-stylegan-tf">code</a>
                   <p></p>
                   <p style="text-align:justify">
-                    We propose the MSG-GAN (Multi-Scale Gradient Generative Adversarial Network), a simple but 
-                    effective technique for addressing the instability problem of GANs by allowing the flow 
-                    of gradients from the discriminator to the generator at multiple scales. This technique 
-                    provides a stable approach for high resolution image synthesis, and serves as an alternative 
+                    We propose the MSG-GAN (Multi-Scale Gradient Generative Adversarial Network), a simple but
+                    effective technique for addressing the instability problem of GANs by allowing the flow
+                    of gradients from the discriminator to the generator at multiple scales. This technique
+                    provides a stable approach for high resolution image synthesis, and serves as an alternative
                     to the commonly used progressive growing technique.
                   </p>
                 </td>
