@@ -145,6 +145,69 @@
             style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
 
+              <tr onmouseout="meta3dgen_stop()" onmouseover="meta3dgen_start()">
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <div class="one">
+                    <div class="two" id='meta3dgen_image'><video width=100% muted autoplay loop>
+                        <source src="images/meta3dgen_after.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video></div>
+                    <img src='images/meta3dgen_before.png' width=100%>
+                  </div>
+                  <script type="text/javascript">
+                    function meta3dgen_start() {
+                      document.getElementById('meta3dgen_image').style.opacity = "1";
+                    }
+
+                    function meta3dgen_stop() {
+                      document.getElementById('meta3dgen_image').style.opacity = "0";
+                    }
+                    meta3dgen_stop()
+                  </script>
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                  <a href="https://ai.meta.com/research/publications/meta-3d-gen/">
+                    <span class="papertitle">Meta 3D Gen
+                    </span>
+                  </a>
+                  <br>
+                  Raphael Bensadoun,
+                  <a href="https://www.tmonnier.com/">Tom Monnier</a>,
+                  Yanir Kleiman,
+                  Filippos Kokkinos,
+                  Yawar Siddiqui,
+                  Mahendra Kariya,
+                  Omri Harosh,
+                  <a href="https://shapovalov.ro/">Roman Shapovalov</a>,
+                  Benjamin Graham,
+                  Emilien Garreau,
+                  <strong>Animesh Karnewar</strong>,
+                  Ang Cao,
+                  Idan Azuri,
+                  Iurii Makarov,
+                  Eric-Tuan Le,
+                  Antoine Toisoul,
+                  <a href="https://d-novotny.github.io">David Novotny</a>,
+                  Oran Gafni,
+                  Natalia Neverova,
+                  <a href="https://www.robots.ox.ac.uk/~vedaldi">Andrea Vedaldi</a>
+                  <br>
+                  <em>WhitePaper</em>, 2024
+                  <br>
+                  <a href="https://ai.meta.com/research/publications/meta-3d-gen/">project page</a>
+                  /
+                  <!-- <a href="">video</a> -->
+                  <!-- / -->
+                  <a href="https://arxiv.org/abs/2407.02599">arXiv</a>
+                  <p></p>
+                  <p>
+                    We introduce Meta 3D Gen (3DGen), a new state-of-the-art, fast pipeline for text-to-3D asset
+                    generation. 3DGen offers 3D asset creation with high prompt fidelity and
+                    high-quality 3D shapes and textures in under a minute.
+                  </p>
+                </td>
+              </tr>
+
               <tr onmouseout="goembed_stop()" onmouseover="goembed_start()">
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <div class="one">
