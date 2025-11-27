@@ -78,7 +78,7 @@
                   </p>
 
 
-                  <p style="text-align:center;padding-top: 20px;">
+                  <p style="text-align:center; padding-top: 20px;">
                     <a href="https://scholar.google.com/citations?user=up0PbDUAAAAJ&hl">Google Scholar</a> &nbsp;/&nbsp;
                     <a href="https://twitter.com/AnimeshKarnewar">Twitter</a> &nbsp;/&nbsp;
                     <a href="https://github.com/akanimax">Github</a> &nbsp;/&nbsp;
@@ -162,15 +162,19 @@
                         <source src="images/neodragon_after.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                       </video></div>
-                    <img src='images/neodragon_before.png' width=100%>
+                    <img id="neodragon_banner" src='images/neodragon_before.png' width=100%>
                   </div>
                   <script type="text/javascript">
                     function neodragon_start() {
+                      console.log("Neodragon start");
                       document.getElementById('neodragon_image').style.opacity = "1";
+                      document.getElementById('neodragon_banner').style.opacity = "0";
                     }
 
                     function neodragon_stop() {
+                      console.log("Neodragon stop");
                       document.getElementById('neodragon_image').style.opacity = "0";
+                      document.getElementById('neodragon_banner').style.opacity = "1";
                     }
                     neodragon_stop()
                   </script>
