@@ -4,18 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Tells search engines that karnewar-qcom.github.io is the one true copy of
-       this page, so the ranking signals accumulated here consolidate onto it. -->
-  <link rel="canonical" href="https://karnewar-qcom.github.io/">
-
-  <!-- GitHub Pages serves static files only, so a real 301 is not possible.
-       A zero-delay meta refresh is the documented substitute: Google follows it
-       and treats it as a redirect. -->
+  <!-- Catch-all for any old deep URLs still in search results or inbound links.
+       GitHub Pages serves this file with a 404 status, so search engines will
+       not pass ranking signals through it - its job is to not dead-end humans.
+       The signal-consolidating redirect is index.html. -->
   <meta http-equiv="refresh" content="0; url=https://karnewar-qcom.github.io/">
 
-  <title>Animesh Karnewar - moved to karnewar-qcom.github.io</title>
-  <meta name="author" content="Animesh Karnewar">
-  <meta name="description" content="Animesh Karnewar's homepage has moved to https://karnewar-qcom.github.io/">
+  <title>Page not found - moved to karnewar-qcom.github.io</title>
+  <meta name="robots" content="noindex">
 
   <style>
     body {
@@ -62,35 +58,19 @@
     a.go:hover {
       background: #1d4ed8;
     }
-    .small {
-      font-size: 0.85rem;
-      color: #64748b;
-      margin: 1.5rem 0 0;
-    }
-    .small a {
-      color: #475569;
-    }
   </style>
 </head>
 <body>
   <div class="card">
-    <h1>This page has moved</h1>
+    <h1>This site has moved</h1>
     <p>
       Animesh Karnewar's homepage now lives at
       <strong>karnewar-qcom.github.io</strong>.
-      You should be redirected automatically.
     </p>
     <p>
       <a class="go" href="https://karnewar-qcom.github.io/">Go to the new page</a>
     </p>
-    <p class="small">
-      If you are not redirected, visit
-      <a href="https://karnewar-qcom.github.io/">https://karnewar-qcom.github.io/</a>
-    </p>
   </div>
-
-  <!-- Belt-and-braces for anything that ignores the meta refresh. replace()
-       rather than assign() so this dead URL does not linger in the back button. -->
   <script>
     location.replace('https://karnewar-qcom.github.io/');
   </script>
